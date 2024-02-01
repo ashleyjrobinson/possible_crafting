@@ -1,8 +1,6 @@
 # Possible Crafting
 #### Utilises player metadata in qbx-core and qb-core to allow you to level lock crafts and add xp/rep for crafting items.
 
-
-[Preview](https://www.youtube.com/watch?v=WrBC0I1SWgs) //
 [Discord/ Support](https://discord.gg/Gnb2S7uAdG)
 
 ## Install:
