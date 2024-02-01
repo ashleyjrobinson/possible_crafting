@@ -6,17 +6,16 @@ description 'Possible Crafting - Giving the ability to handle ox_inventory craft
 version '1.0.0'
 
 client_scripts {
-    '@qbx_core/modules/playerdata.lua'
+    -- '@qbx_core/modules/playerdata.lua'
 }
 
 shared_scripts {
     'shared/*',
-    '@ox_lib/init.lua',
-    '@qbx_core/modules/utils.lua'
+    '@ox_lib/init.lua'
+    -- '@qbx_core/modules/utils.lua'
 }
 
 server_scripts {
-    '@oxmysql/lib/MySQL.lua',
     'server/*'
 }
 

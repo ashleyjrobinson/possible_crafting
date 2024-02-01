@@ -1,9 +1,10 @@
 local config = require('shared.config')
+local QBCore = exports['qb-core']:GetCoreObject()
 
 -- Function to get the players crafting level from their metadata
 local function getPlayerCraftingLevel(source)
     local src = source
-    local Player = exports.qbx_core:GetPlayer(src)
+    local Player = QBCore.Functions.GetPlayer(src)
     if not Player then return end
     local craftingrep = Player.PlayerData.metadata["craftingrep"]
     if config.Debug then
@@ -16,7 +17,7 @@ end
 local function registerCraftingHook(config)
     return exports.ox_inventory:registerHook('craftItem', function(payload)
         local src = payload.source
-        local Player = exports.qbx_core:GetPlayer(src)
+        local Player = QBCore.Functions.GetPlayer(src)
         local playerCraftingLevel = getPlayerCraftingLevel(src)
         local requiredCraftingLevel = config.requiredCraftingLevel
         local addCraftingXP = config.addCraftingXP
